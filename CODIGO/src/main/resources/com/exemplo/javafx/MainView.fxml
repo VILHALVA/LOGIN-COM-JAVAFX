@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="20" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.exemplo.javafx.Controller" style="-fx-background-color: #f4f4f4; -fx-padding: 20;">
+    
+    <TextField fx:id="usuarioField" promptText="Usuário" style="-fx-font-size: 14px; -fx-padding: 10px; -fx-background-radius: 5; -fx-border-color: #888888; -fx-border-radius: 5; -fx-border-width: 1;" />
+    
+    <PasswordField fx:id="senhaField" promptText="Senha" style="-fx-font-size: 14px; -fx-padding: 10px; -fx-background-radius: 5; -fx-border-color: #888888; -fx-border-radius: 5; -fx-border-width: 1;" />
+    
+    <Button text="CADASTRAR" onAction="#handleCadastro" 
+            style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px; -fx-padding: 10px 20px; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: #388E3C; -fx-border-width: 1;" />
+    
+    <Button text="LOGIN" onAction="#handleLogin" 
+            style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-font-size: 16px; -fx-padding: 10px 20px; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: #1976D2; -fx-border-width: 1;" />
+</VBox>
